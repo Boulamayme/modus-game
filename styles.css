@@ -1,0 +1,299 @@
+ html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f0f0f0; */
+    background-image: url('images/BG-game5.jpg');
+    background-size: cover; /* Adapte l'image de fond à la taille de la fenêtre */
+     background-repeat: no-repeat; /* Empêche la répétition de l'image */
+     background-position: center;  
+ }  
+.full-height-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 68px;
+
+} */
+
+ form {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: #ffffff;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.form1{
+    background-color: #fff;
+
+}
+.form2{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row !important;
+
+}
+/* .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Pour centrer horizontalement */
+    /* height: 100% !important; 
+   
+} */ 
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 40px !important; 
+
+ }  
+.p-color{
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Permanent Marker', cursive !important;
+    background-color: #ffffff;
+    
+   
+}
+
+
+
+/* input[type="text"] {
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive !important;
+    padding: 5px;
+    margin-bottom: 10px;
+} */
+
+input[type="submit"] {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #0000FF;
+    border-radius: 5px;
+    border: none;
+    color: #f8f8f8;
+    margin-left: 10px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+    transition: transform 0.2s ease-out; /* Transition pour l'effet de taille */
+ } 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin-top: 50px !important;
+    gap: 5px 0px !important;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
+
+.cell {
+    background-color: #0000FF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    
+}
+.cell.empty {
+    background-color: blue; /* Couleur bleue pour les cases vides */
+}
+
+.correct {
+    background-color: red;
+    color: white;
+}
+
+.present {
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    
+}
+.present span {
+    border: 2px solid yellow; /* Bord jaune pour entourer la lettre */
+    border-radius: 50%; /* Rendre le bord circulaire */
+    padding: 0 5px; /* Ajouter de l'espace autour de la lettre */
+    position: absolute; /* Positionner la span */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Ajuster pour centrer exactement */
+}
+
+.absent {
+    background-color: #0000FF;
+    color: white;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+  .button{
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: red;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    color: #f8f8f8;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-out; /* Transition pour l'effet de taille */
+  }  
+
+ .button-container{
+    display: flex;
+    justify-content: center !important;
+    
+} 
+.navbar{
+    min-height: 80px !important;
+    
+}
+.navbar-inverse{
+    margin-bottom: 50px;
+}
+
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+    color: #fff !important;
+    font-size: 30px;
+    
+}
+.content {
+    flex: 1;
+}
+.footer-style{
+    background-color: #333 !important;
+    color: #fff !important;
+   
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+}
+.home{
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: 'Permanent Marker', cursive;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+.home-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 !important;
+}
+
+.guess-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff;
+    border-radius: 10px;
+    max-width: 400px; */
+}
+.score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffffff; */
+    border-radius: 20px;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.score-title{
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive !important;
+    color: #0000FF;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 40px !important;
+}
+.score-title1{
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive !important;
+    color: #000;
+    font-size: 30px !important;
+}
+.espace{
+    display: flex;
+    
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Add space between rows */
+    margin-top: 20px;
+    
+    
+}
+th, td {
+    padding: 0px 80px;
+    text-align: center;
+    background-color: #fff; /* Ensure background is white for spacing effect */
+    border-radius: 10px 10px 10px 10px;
+    
+}
+th {
+    background-color: #f2f2f2;
+}
+tr {
+    background-color: #fff; /* Add background color to tr */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+}
+td{
+    font-size: 20px !important;
+}
+.a-score{
+    font-size: 20px !important;
+    background-color: #fff;
+    text-decoration: #000 !important;
+}
